@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">calculadora</string>
+    <string name="ingresar_base">Ingresar base</string>
+    <string name="ingresar_altura">ingresar altura</string>
 </resources>

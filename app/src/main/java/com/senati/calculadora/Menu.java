@@ -10,17 +10,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu);
 
     }
 
-    public void redirectMenu(View view){
-        Intent intent = new Intent(getApplicationContext(), Menu.class);
+    public void redirectTriangulo(View view){
+        Intent intent = new Intent(getApplicationContext(), Triangulo.class);
         startActivity(intent);
     }
 }
