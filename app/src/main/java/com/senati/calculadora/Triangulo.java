@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class Triangulo extends AppCompatActivity {
 
     private EditText tv_base, tv_altura;
@@ -24,16 +26,19 @@ public class Triangulo extends AppCompatActivity {
         loadUI();
     }
 
+    // eventos
     public void hallarAreaTriangulo(View view){
         float base = Float.parseFloat(tv_base.getText().toString());
         float altura = Float.parseFloat(tv_altura.getText().toString());
 
         float area = (base*altura)/2;
 
-        tv_resultado.setText(String.valueOf(area));
+        DecimalFormat formateo = new DecimalFormat("#.##");
+        tv_resultado.setText(formateo.format(area));
     }
 
 
+    // metodos
     public void loadUI(){
         tv_base = (EditText) findViewById(R.id.tv_base);
         tv_altura = (EditText) findViewById(R.id.tv_altura);

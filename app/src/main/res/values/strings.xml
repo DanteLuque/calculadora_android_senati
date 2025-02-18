@@ -3,6 +3,14 @@
     <string name="btn_ingresar">INGRESAR</string>
     <string name="main_msg">by: Dante Luque :D</string>
 
+    <string name="triangulo">TRIANGULO</string>
+    <string name="trapecio">TRAPECIO</string>
+    <string name="rectangulo">RECTANGULO</string>
+    <string name="circulo">CIRCULO</string>
+    <string name="rombo">ROMBO</string>
+
+
+
     <string name="ingresar_base">Ingresar base</string>
     <string name="ingresar_altura">ingresar altura</string>
 </resources>

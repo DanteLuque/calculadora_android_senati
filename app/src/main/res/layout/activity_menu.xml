@@ -9,52 +9,72 @@
 
     <Button
         android:id="@+id/btn_triangulo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="36dp"
         android:onClick="redirectTriangulo"
-        android:text="TRIANGULO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/triangulo"
+        app:layout_constraintTop_toBottomOf="@+id/img_menu"
+        tools:layout_editor_absoluteX="0dp"
+        android:backgroundTint="@color/blue"
+        />
 
     <Button
         android:id="@+id/btn_trapecio"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="28dp"
-        android:text="TRAPECIO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_triangulo" />
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/trapecio"
+        app:layout_constraintTop_toBottomOf="@+id/btn_triangulo"
+        tools:layout_editor_absoluteX="0dp"
+        android:backgroundTint="@color/blue"
+        />
 
     <Button
         android:id="@+id/btn_rectangulo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="32dp"
-        android:text="RECTANGULO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_trapecio" />
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/rectangulo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trapecio"
+        tools:layout_editor_absoluteX="16dp"
+        android:backgroundTint="@color/blue"
+        />
 
     <Button
         android:id="@+id/btn_circulo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="32dp"
-        android:text="CIRCULO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_rectangulo" />
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/circulo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rectangulo"
+        tools:layout_editor_absoluteX="0dp"
+        android:backgroundTint="@color/blue"
+        />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="40dp"
-        android:text="ROMBO"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/rombo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_circulo"
+        tools:layout_editor_absoluteX="0dp"
+        android:backgroundTint="@color/blue"
+        />
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="175dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_circulo" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
