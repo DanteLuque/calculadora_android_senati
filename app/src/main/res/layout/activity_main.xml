@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
-        android:text="by: Dante Luque :D"
+        android:text="@string/main_msg"
         android:textAlignment="center" />
 
 </LinearLayout>
