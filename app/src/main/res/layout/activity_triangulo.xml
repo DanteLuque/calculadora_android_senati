@@ -5,53 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Triangulo">
+    tools:context=".Triangulo"
+    android:background="@android:color/white"
+    >
 
     <EditText
         android:id="@+id/tv_base"
-        android:hint="@string/ingresar_base"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:hint="@string/ingresar_base"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_triangulo"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/tv_altura"
-        android:hint="@string/ingresar_altura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:hint="@string/ingresar_altura"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_base" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_base"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btn_calcular"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
         android:onClick="hallarAreaTriangulo"
         android:text="calcular area"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_resultado" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultado"
+        tools:layout_editor_absoluteX="0dp"
+        android:backgroundTint="@color/blue"
+        />
 
     <TextView
         android:id="@+id/tv_resultado"
-        android:layout_width="167dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="72dp"
-        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_altura"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/img_triangulo"
+        android:layout_width="190dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_altura" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
