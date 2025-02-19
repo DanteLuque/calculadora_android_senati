@@ -19,8 +19,8 @@
     <string name="ingresar_base">Ingresar base</string>
 
     <!--acitity_trapecio-->
-    <string name="ingresar_base_mayor">Ingresar base mayor</string>
-    <string name="ingresar_base_menor">ingresar base menor</string>
+    <string name="ingresar_base_mayor">base mayor</string>
+    <string name="ingresar_base_menor">base menor</string>
 
     <!--acitity_circulo-->
     <string name="ingresar_radio">Ingresar radio</string>

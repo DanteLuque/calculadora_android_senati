@@ -25,66 +25,70 @@
 
     <EditText
         android:id="@+id/et_base_mayor"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/ingresar_base_mayor"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/img_trapecio"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_base_mayor"
+        app:layout_constraintTop_toBottomOf="@+id/img_trapecio" />
 
     <EditText
         android:id="@+id/et_base_menor"
-        android:layout_width="match_parent"
+        android:layout_width="164dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/ingresar_base_menor"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_base_mayor"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_base_menor"
+        app:layout_constraintTop_toBottomOf="@+id/et_base_mayor" />
 
     <EditText
         android:id="@+id/et_altura"
-        android:layout_width="match_parent"
+        android:layout_width="164dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/ingresar_altura"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_base_menor"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_altura_trapecio"
+        app:layout_constraintTop_toBottomOf="@+id/et_base_menor" />
 
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/blue"
         android:onClick="hallarAreaTrapecio"
-        android:text="calcular area"
+        android:text="@string/calcular_area"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/tv_resultado"
         tools:layout_editor_absoluteX="30dp" />
 
     <TextView
         android:id="@+id/tv_resultado"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_altura"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/et_altura" />
 
     <ImageView
         android:id="@+id/img_trapecio"
@@ -94,4 +98,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_base_mayor"
+        android:layout_width="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="B:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_trapecio" />
+
+    <TextView
+        android:id="@+id/tv_base_menor"
+        android:layout_width="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="b:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_base_mayor" />
+
+    <TextView
+        android:id="@+id/tv_altura_trapecio"
+        android:layout_width="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="h:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_base_menor" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Resultado:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_altura_trapecio" />
+
+    <ImageView
+        android:id="@+id/img_demo_trapecio"
+        android:layout_width="178dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/demotrapecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_trapecio" />
 </androidx.constraintlayout.widget.ConstraintLayout>
