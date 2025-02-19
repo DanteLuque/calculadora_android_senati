@@ -66,6 +66,11 @@ public class Menu extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void redirectTrapecio(View view){
+        Intent intent = new Intent(getApplicationContext(), Trapecio.class);
+        startActivity(intent);
+    }
+
     // metodos
     public void loadUI(){
         img_menu = (ImageView) findViewById(R.id.img_menu);

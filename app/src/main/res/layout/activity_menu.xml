@@ -28,11 +28,11 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="36dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="redirectTrapecio"
         android:text="@string/trapecio"
         app:layout_constraintTop_toBottomOf="@+id/btn_triangulo"
-        tools:layout_editor_absoluteX="0dp"
-        android:backgroundTint="@color/blue"
-        />
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btn_rectangulo"

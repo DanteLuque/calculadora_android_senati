@@ -1,16 +1,24 @@
 <resources>
-    <string name="app_name">calculadora</string>
+    <!--commons-->
+    <string name="calcular_area">Calcular area</string>
+    <string name="ingresar_altura">ingresar altura</string>
+
+    <!--acitity_main-->
+    <string name="app_name">CalcuArea</string>
     <string name="btn_ingresar">INGRESAR</string>
     <string name="main_msg">by: Dante Luque :D</string>
 
+    <!--acitity_menu-->
     <string name="triangulo">TRIANGULO</string>
     <string name="trapecio">TRAPECIO</string>
     <string name="rectangulo">RECTANGULO</string>
     <string name="circulo">CIRCULO</string>
     <string name="rombo">ROMBO</string>
 
-
-
+    <!--acitity_triangulo-->
     <string name="ingresar_base">Ingresar base</string>
-    <string name="ingresar_altura">ingresar altura</string>
+
+    <!--acitity_trapecio-->
+    <string name="ingresar_base_mayor">Ingresar base mayor</string>
+    <string name="ingresar_base_menor">ingresar base menor</string>
 </resources>

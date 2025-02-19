@@ -25,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
         cargarGIF();
     }
 
+    // eventos
     public void redirectMenu(View view){
         Intent intent = new Intent(getApplicationContext(), Menu.class);
         startActivity(intent);
     }
 
+    // metodos
     public void loadUI(){
          img_main = (ImageView) findViewById(R.id.img_main);
     }

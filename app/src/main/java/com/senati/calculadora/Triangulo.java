@@ -6,11 +6,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 
@@ -44,10 +40,10 @@ public class Triangulo extends AppCompatActivity {
 
     // metodos
     public void loadUI(){
-        tv_base = (EditText) findViewById(R.id.tv_base);
-        tv_altura = (EditText) findViewById(R.id.tv_altura);
+        tv_base = (EditText) findViewById(R.id.tv_base_mayor);
+        tv_altura = (EditText) findViewById(R.id.tv_base_menor);
         tv_resultado = (TextView) findViewById(R.id.tv_resultado);
-        img_triangulo = (ImageView) findViewById(R.id.img_triangulo);
+        img_triangulo = (ImageView) findViewById(R.id.img_trapecio);
     }
 
     public void cargarGIF(){
