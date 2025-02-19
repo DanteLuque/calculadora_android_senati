@@ -21,4 +21,11 @@
     <!--acitity_trapecio-->
     <string name="ingresar_base_mayor">Ingresar base mayor</string>
     <string name="ingresar_base_menor">ingresar base menor</string>
+
+    <!--acitity_circulo-->
+    <string name="ingresar_radio">Ingresar radio</string>
+
+    <!--acitity_rombo-->
+    <string name="ingresar_diagonal_mayor">Ingresar diagonal mayor</string>
+    <string name="ingresar_diagonal_menor">ingresar diagonal menor</string>
 </resources>

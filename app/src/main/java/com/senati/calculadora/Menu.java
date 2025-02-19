@@ -5,12 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 import com.bumptech.glide.Glide;
 
@@ -73,6 +69,16 @@ public class Menu extends AppCompatActivity {
 
     public void redirectRectangulo(View view){
         Intent intent = new Intent(getApplicationContext(), Rectangulo.class);
+        startActivity(intent);
+    }
+
+    public void redirectCirculo(View view){
+        Intent intent = new Intent(getApplicationContext(), Circulo.class);
+        startActivity(intent);
+    }
+
+    public void redirectRombo(View view){
+        Intent intent = new Intent(getApplicationContext(), Rombo.class);
         startActivity(intent);
     }
 
