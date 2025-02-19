@@ -77,28 +77,28 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <TextView
-        android:id="@+id/tv_resultado"
-        android:layout_width="256dp"
-        android:layout_height="51dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_result"
-        app:layout_constraintTop_toBottomOf="@+id/et_altura" />
-
-    <TextView
         android:id="@+id/tv_result"
-        android:layout_width="100dp"
+        android:layout_width="103dp"
         android:layout_height="51dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="72dp"
         android:text="Resultado:"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_altura" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_formula" />
 
     <ImageView
         android:id="@+id/img_rectangulo"
