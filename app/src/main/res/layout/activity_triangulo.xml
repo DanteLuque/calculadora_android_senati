@@ -25,54 +25,68 @@
 
     <EditText
         android:id="@+id/et_base"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/ingresar_base"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/img_triangulo"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_base"
+        app:layout_constraintTop_toBottomOf="@+id/img_triangulo" />
 
     <EditText
         android:id="@+id/et_altura"
-        android:layout_width="match_parent"
+        android:layout_width="164dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
         android:ems="10"
         android:hint="@string/ingresar_altura"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_base"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_altura"
+        app:layout_constraintTop_toBottomOf="@+id/et_base" />
 
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/blue"
         android:onClick="hallarAreaTriangulo"
         android:text="@string/calcular_area"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/tv_resultado"
-        tools:layout_editor_absoluteX="0dp"
-        android:backgroundTint="@color/blue"
-        />
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="Resultado:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_altura" />
 
     <TextView
         android:id="@+id/tv_resultado"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_altura"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/et_altura" />
 
     <ImageView
         android:id="@+id/img_triangulo"
@@ -82,4 +96,51 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_base"
+        android:layout_width="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="b:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_triangulo" />
+
+    <TextView
+        android:id="@+id/tv_altura"
+        android:layout_width="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:text="h:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_base" />
+
+    <ImageView
+        android:id="@+id/img_demo_triangulo"
+        android:layout_width="178dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/demotriangulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_triangulo" />
+
+    <TextView
+        android:id="@+id/tv_formula"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="(base x altura)/2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_demo_triangulo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
