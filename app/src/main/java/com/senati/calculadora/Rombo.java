@@ -22,12 +22,14 @@ public class Rombo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rombo);
+        Components.buildToolbar(this, R.id.toolbar);
         loadUI();
         cargarGIF();
     }
 
+
     // eventos
-    public void hallarAreaCirculo(View view){
+    public void hallarAreaRombo(View view){
         float diagonalMayor = Float.parseFloat(et_diagonal_mayor.getText().toString());
         float diagonalMenor = Float.parseFloat(et_diagonal_menor.getText().toString());
 

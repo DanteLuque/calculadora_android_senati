@@ -19,6 +19,7 @@ public class Rectangulo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rectangulo);
+        Components.buildToolbar(this, R.id.toolbar);
         loadUI();
         cargarGIF();
     }

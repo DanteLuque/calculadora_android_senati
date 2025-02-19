@@ -9,38 +9,52 @@
     android:background="@android:color/white"
     >
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/left_arrow"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Circulo" />
+
     <EditText
         android:id="@+id/et_radio"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="@string/ingresar_radio"
         android:inputType="numberDecimal"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/img_circulo"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="30dp" />
 
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/blue"
         android:onClick="hallarAreaCirculo"
         android:text="@string/calcular_area"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/tv_resultado"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="30dp" />
 
     <TextView
         android:id="@+id/tv_resultado"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/et_radio"
@@ -50,8 +64,9 @@
         android:id="@+id/img_circulo"
         android:layout_width="190dp"
         android:layout_height="171dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

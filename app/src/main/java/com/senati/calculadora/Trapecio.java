@@ -18,6 +18,7 @@ public class Trapecio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trapecio);
+        Components.buildToolbar(this, R.id.toolbar);
         loadUI();
         cargarGIF();
     }
