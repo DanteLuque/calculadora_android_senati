@@ -13,17 +13,16 @@
         android:id="@+id/img_main"
         android:layout_width="match_parent"
         android:layout_height="208dp"
-        android:layout_margin="70dp"
-        />
+        android:layout_margin="70dp" />
 
     <Button
         android:id="@+id/btn_ingresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="redirectMenu"
-        android:text="@string/btn_ingresar"
+        android:layout_marginHorizontal="60dp"
         android:backgroundTint="@color/blue"
-        />
+        android:onClick="redirectMenu"
+        android:text="@string/btn_ingresar" />
 
     <TextView
         android:id="@+id/tv_message"

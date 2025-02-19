@@ -15,8 +15,8 @@ public class Components {
             public void onClick(View view) {
                 activity.getOnBackPressedDispatcher().onBackPressed();
             }
-        })
-;*/
+        });
+*/
         //Comprobado ✅: una función lamdba optimizó el evento del Toolbar (similar a una función de flecha en js)
         toolbar.setNavigationOnClickListener(view -> activity.getOnBackPressedDispatcher().onBackPressed());
     }

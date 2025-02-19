@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Glide.with(this)
-                .load(R.drawable.calculadora)
-                .into(img_main);
+        Helper.cargarGIF(this, R.drawable.calculadora, img_main);
     }
 }
