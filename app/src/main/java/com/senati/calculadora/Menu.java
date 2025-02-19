@@ -71,6 +71,11 @@ public class Menu extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void redirectRectangulo(View view){
+        Intent intent = new Intent(getApplicationContext(), Rectangulo.class);
+        startActivity(intent);
+    }
+
     // metodos
     public void loadUI(){
         img_menu = (ImageView) findViewById(R.id.img_menu);

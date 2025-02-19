@@ -40,11 +40,11 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="36dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="redirectRectangulo"
         android:text="@string/rectangulo"
         app:layout_constraintTop_toBottomOf="@+id/btn_trapecio"
-        tools:layout_editor_absoluteX="16dp"
-        android:backgroundTint="@color/blue"
-        />
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/btn_circulo"

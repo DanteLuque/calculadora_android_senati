@@ -5,75 +5,62 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Trapecio"
+    tools:context=".Rectangulo"
     android:background="@android:color/white"
     >
 
     <EditText
-        android:id="@+id/et_base_mayor"
+        android:id="@+id/et_base"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
-        android:hint="@string/ingresar_base_mayor"
+        android:hint="@string/ingresar_base"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/img_trapecio"
-        tools:layout_editor_absoluteX="30dp" />
-
-    <EditText
-        android:id="@+id/et_base_menor"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:hint="@string/ingresar_base_menor"
-        android:inputType="numberDecimal"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_base_mayor"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintTop_toBottomOf="@+id/img_rectangulo"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/et_altura"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/ingresar_altura"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_base_menor"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintTop_toBottomOf="@+id/et_base"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="@color/blue"
-        android:onClick="hallarAreaTrapecio"
-        android:text="calcular area"
+        android:onClick="hallarAreaRectangulo"
+        android:text="@string/calcular_area"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/tv_resultado"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/tv_resultado"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/et_altura"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
-        android:id="@+id/img_trapecio"
+        android:id="@+id/img_rectangulo"
         android:layout_width="190dp"
         android:layout_height="171dp"
         android:layout_marginTop="32dp"
