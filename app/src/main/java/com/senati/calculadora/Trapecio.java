@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,16 +25,41 @@ public class Trapecio extends AppCompatActivity {
     }
 
     // eventos
-    public void hallarAreaTrapecio(View view){
-        float baseMayor = Float.parseFloat(et_base_mayor.getText().toString());
-        float baseMenor = Float.parseFloat(et_base_menor.getText().toString());
-        float altura = Float.parseFloat(et_altura.getText().toString());
+    public void hallarAreaTrapecio(View view) {
+        String baseMayorText = et_base_mayor.getText().toString();
+        String baseMenorText = et_base_menor.getText().toString();
+        String alturaText = et_altura.getText().toString();
 
-        float area = ((baseMayor+baseMenor)/2)*altura;
+        if (baseMayorText.isEmpty()) {
+            et_base_mayor.setError("Ingrese un valor");
+            return;
+        }
 
-        tv_resultado.setText(Helper.decimalFormateo(area));
+        if (baseMenorText.isEmpty()) {
+            et_base_menor.setError("Ingrese un valor");
+            return;
+        }
+
+        if (alturaText.isEmpty()) {
+            et_altura.setError("Ingrese un valor");
+            return;
+        }
+
+        try {
+            float area = calcular(baseMayorText, baseMenorText, alturaText);
+            tv_resultado.setText(Helper.decimalFormateo(area));
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Ingrese valores válidos", Toast.LENGTH_SHORT).show();
+        }
     }
     // metodos
+    public float calcular(String baseMayorText, String baseMenorText, String alturaText) {
+        float baseMayor = Float.parseFloat(baseMayorText);
+        float baseMenor = Float.parseFloat(baseMenorText);
+        float altura = Float.parseFloat(alturaText);
+        return ((baseMayor + baseMenor) / 2) * altura;
+    }
+
     public void loadUI(){
         et_base_mayor = (EditText) findViewById(R.id.et_base_mayor);
         et_base_menor = (EditText) findViewById(R.id.et_base_menor);
