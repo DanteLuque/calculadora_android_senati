@@ -25,7 +25,7 @@
 
     <EditText
         android:id="@+id/et_base_mayor"
-        android:layout_width="164dp"
+        android:layout_width="140dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginStart="8dp"
@@ -39,7 +39,7 @@
 
     <EditText
         android:id="@+id/et_base_menor"
-        android:layout_width="164dp"
+        android:layout_width="140dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginStart="8dp"
@@ -53,7 +53,7 @@
 
     <EditText
         android:id="@+id/et_altura"
-        android:layout_width="164dp"
+        android:layout_width="140dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginStart="8dp"
@@ -70,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/blue"
         android:onClick="hallarAreaTrapecio"
         android:text="@string/calcular_area"
@@ -80,11 +80,11 @@
 
     <TextView
         android:id="@+id/tv_resultado"
-        android:layout_width="297dp"
+        android:layout_width="274dp"
         android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="64dp"
         android:textAlignment="textStart"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/tv_result"
@@ -95,7 +95,7 @@
         android:layout_width="100dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="64dp"
         android:text="Resultado:"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -152,7 +152,7 @@
         android:layout_width="198dp"
         android:layout_height="245dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         android:src="@drawable/demotrapecio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_trapecio" />
@@ -161,7 +161,7 @@
         android:id="@+id/tv_formula"
         android:layout_width="198dp"
         android:layout_height="51dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:text="((B+b)/2) . h"
         android:textAlignment="center"
         android:textSize="24sp"
