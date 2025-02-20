@@ -6,7 +6,7 @@
     <!--acitity_main-->
     <string name="app_name">CalcuArea</string>
     <string name="btn_ingresar">INGRESAR</string>
-    <string name="main_msg">by: Dante Luque─</string>
+    <string name="main_msg">by: Dante Luque</string>
 
     <!--acitity_menu-->
     <string name="triangulo">TRIANGULO</string>
@@ -26,6 +26,6 @@
     <string name="ingresar_radio">Ingresar radio</string>
 
     <!--acitity_rombo-->
-    <string name="ingresar_diagonal_mayor">Ingresar diagonal mayor</string>
-    <string name="ingresar_diagonal_menor">ingresar diagonal menor</string>
+    <string name="ingresar_diagonal_mayor">diagonal mayor</string>
+    <string name="ingresar_diagonal_menor">diagonal menor</string>
 </resources>

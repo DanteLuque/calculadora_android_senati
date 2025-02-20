@@ -35,11 +35,11 @@
         android:hint="@string/ingresar_radio"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_radio"
+        app:layout_constraintStart_toEndOf="@+id/tv_diagonal_mayor"
         app:layout_constraintTop_toBottomOf="@+id/img_circulo" />
 
     <TextView
-        android:id="@+id/tv_radio"
+        android:id="@+id/tv_diagonal_mayor"
         android:layout_width="25dp"
         android:layout_height="51dp"
         android:layout_marginStart="4dp"
@@ -60,7 +60,7 @@
         android:textAlignment="center"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_radio" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_diagonal_mayor" />
 
     <TextView
         android:id="@+id/tv_pi2"
@@ -97,7 +97,7 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_radio" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_diagonal_mayor" />
 
     <TextView
         android:id="@+id/tv_resultado"

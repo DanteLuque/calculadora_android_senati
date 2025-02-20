@@ -34,11 +34,11 @@
         android:hint="@string/ingresar_base"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_radio"
+        app:layout_constraintStart_toEndOf="@+id/tv_diagonal_mayor"
         app:layout_constraintTop_toBottomOf="@+id/img_rectangulo" />
 
     <TextView
-        android:id="@+id/tv_radio"
+        android:id="@+id/tv_diagonal_mayor"
         android:layout_width="25dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
@@ -60,7 +60,7 @@
         android:hint="@string/ingresar_altura"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_altura"
+        app:layout_constraintStart_toEndOf="@+id/tv_diagonal_menor"
         app:layout_constraintTop_toBottomOf="@+id/et_base" />
 
     <Button
@@ -86,7 +86,7 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_altura" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_diagonal_menor" />
 
     <TextView
         android:id="@+id/tv_resultado"
@@ -111,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
-        android:id="@+id/tv_altura"
+        android:id="@+id/tv_diagonal_menor"
         android:layout_width="25dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
@@ -120,7 +120,7 @@
         android:textAlignment="center"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_radio" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_diagonal_mayor" />
 
     <ImageView
         android:id="@+id/img_demo_rectangulo"
@@ -144,4 +144,6 @@
         app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_demo_rectangulo" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

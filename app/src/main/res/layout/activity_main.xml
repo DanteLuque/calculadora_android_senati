@@ -39,6 +39,7 @@
         android:layout_marginTop="56dp"
         android:text="@string/main_msg"
         android:textAlignment="center"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_descripcion" />
@@ -50,6 +51,7 @@
         android:layout_marginTop="64dp"
         android:text="En esta app podrás calcular el área de distintas figuras geometricas... y ya, nada más! >:D no había mucho presupuesto."
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_ingresar" />
