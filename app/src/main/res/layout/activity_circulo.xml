@@ -23,18 +23,56 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Circulo" />
 
+
     <EditText
         android:id="@+id/et_radio"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/ingresar_radio"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/img_circulo"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_radio"
+        app:layout_constraintTop_toBottomOf="@+id/img_circulo" />
+
+    <TextView
+        android:id="@+id/tv_radio"
+        android:layout_width="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:text="r:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_circulo" />
+
+    <TextView
+        android:id="@+id/tv_pi"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="pi:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_radio" />
+
+    <TextView
+        android:id="@+id/tv_pi2"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="3.14"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_pi"
+        app:layout_constraintTop_toBottomOf="@+id/et_radio" />
 
     <Button
         android:id="@+id/btn_calcular"
@@ -50,15 +88,28 @@
         tools:layout_editor_absoluteX="30dp" />
 
     <TextView
-        android:id="@+id/tv_resultado"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="44dp"
+        android:id="@+id/tv_result"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
+        android:text="Resultado:"
         android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_radio" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="textStart"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_radio"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_formula" />
 
     <ImageView
         android:id="@+id/img_circulo"
@@ -69,4 +120,38 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/img_demo_circulo"
+        android:layout_width="178dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/democirculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_circulo" />
+
+    <TextView
+        android:id="@+id/tv_formula"
+        android:layout_width="178dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="pi . r"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_demo_circulo" />
+
+    <TextView
+        android:id="@+id/tv_potencia_cuadrada"
+        android:layout_width="14dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_demo_circulo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

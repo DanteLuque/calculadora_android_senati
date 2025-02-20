@@ -34,11 +34,11 @@
         android:hint="@string/ingresar_base"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_base"
+        app:layout_constraintStart_toEndOf="@+id/tv_radio"
         app:layout_constraintTop_toBottomOf="@+id/img_rectangulo" />
 
     <TextView
-        android:id="@+id/tv_base"
+        android:id="@+id/tv_radio"
         android:layout_width="25dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
@@ -120,7 +120,7 @@
         android:textAlignment="center"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_base" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_radio" />
 
     <ImageView
         android:id="@+id/img_demo_rectangulo"
