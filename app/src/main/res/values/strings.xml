@@ -6,7 +6,7 @@
     <!--acitity_main-->
     <string name="app_name">CalcuArea</string>
     <string name="btn_ingresar">INGRESAR</string>
-    <string name="main_msg">by: Dante Luque :D</string>
+    <string name="main_msg">by: Dante Luque</string>
 
     <!--acitity_menu-->
     <string name="triangulo">TRIANGULO</string>
