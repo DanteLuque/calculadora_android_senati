@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,17 +26,35 @@ public class Rectangulo extends AppCompatActivity {
     }
 
     // eventos
-    public void hallarAreaRectangulo(View view){
-        float base = Float.parseFloat(et_base.getText().toString());
-        float altura = Float.parseFloat(et_altura.getText().toString());
+    public void hallarAreaRectangulo(View view) {
+        String baseText = et_base.getText().toString();
+        String alturaText = et_altura.getText().toString();
 
-        float area = base*altura;
+        if (baseText.isEmpty()) {
+            et_base.setError("Ingrese un valor");
+            return;
+        }
 
-        tv_resultado.setText(Helper.decimalFormateo(area));
+        if (alturaText.isEmpty()) {
+            et_altura.setError("Ingrese un valor");
+            return;
+        }
+
+        try {
+            float area = calcular(baseText, alturaText);
+            tv_resultado.setText(Helper.decimalFormateo(area));
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Ingrese valores válidos", Toast.LENGTH_SHORT).show();
+        }
     }
 
-
     // metodos
+    public float calcular(String baseText, String alturaText) {
+        float base = Float.parseFloat(baseText);
+        float altura = Float.parseFloat(alturaText);
+        return base * altura;
+    }
+
     public void loadUI(){
         et_base = (EditText) findViewById(R.id.et_base);
         et_altura = (EditText) findViewById(R.id.et_altura);

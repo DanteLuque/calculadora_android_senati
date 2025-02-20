@@ -47,7 +47,7 @@ public class Rombo extends AppCompatActivity {
             float area = calcular(diagonalMayorText, diagonalMenorText);
             tv_resultado.setText(Helper.decimalFormateo(area));
         }catch (NumberFormatException e){
-            Toast.makeText(this,"Ingrese un valor válido",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Ingrese valores válidos",Toast.LENGTH_SHORT).show();
         }
     }
 
