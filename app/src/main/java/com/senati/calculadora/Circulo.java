@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,16 +26,28 @@ public class Circulo extends AppCompatActivity {
     }
 
     // eventos
-    public void hallarAreaCirculo(View view){
-        float radio = Float.parseFloat(et_radio.getText().toString());
+    public void hallarAreaCirculo(View view) {
+        String radioText = et_radio.getText().toString();
 
-        float area = (float) (Math.PI * Math.pow(radio, 2));
+        if (radioText.isEmpty()) {
+            et_radio.setError("Ingrese un valor");
+            return;
+        }
 
-        tv_resultado.setText(Helper.decimalFormateo(area));
+        try {
+            float area = calcular(radioText);
+            tv_resultado.setText(Helper.decimalFormateo(area));
+        } catch (NumberFormatException e) {
+            Toast.makeText(this,"Ingrese un valor válido",Toast.LENGTH_SHORT).show();
+        }
     }
 
-
     // metodos
+    public float calcular(String radioText) {
+        float radio = Float.parseFloat(radioText);
+        return (float) (Math.PI * Math.pow(radio, 2));
+    }
+
     public void loadUI(){
         et_radio = (EditText) findViewById(R.id.et_radio);
         tv_resultado = (TextView) findViewById(R.id.tv_resultado);

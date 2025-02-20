@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,8 +46,8 @@ public class Rombo extends AppCompatActivity {
         try{
             float area = calcular(diagonalMayorText, diagonalMenorText);
             tv_resultado.setText(Helper.decimalFormateo(area));
-        }catch (Error e){
-            System.out.println("Error: "+e);
+        }catch (NumberFormatException e){
+            Toast.makeText(this,"Ingrese un valor válido",Toast.LENGTH_SHORT).show();
         }
     }
 
