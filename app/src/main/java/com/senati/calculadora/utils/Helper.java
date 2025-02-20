@@ -1,4 +1,4 @@
-package com.senati.calculadora;
+package com.senati.calculadora.utils;
 
 import android.content.Context;
 import android.widget.ImageView;

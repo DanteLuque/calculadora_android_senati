@@ -1,6 +1,4 @@
-package com.senati.calculadora;
-
-import android.view.View;
+package com.senati.calculadora.utils;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

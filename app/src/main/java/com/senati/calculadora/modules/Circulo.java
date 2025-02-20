@@ -1,4 +1,4 @@
-package com.senati.calculadora;
+package com.senati.calculadora.modules;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +8,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.senati.calculadora.utils.Components;
+import com.senati.calculadora.utils.Helper;
+import com.senati.calculadora.R;
 
 
 public class Circulo extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.senati.calculadora;
+package com.senati.calculadora.modules;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,11 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.senati.calculadora.utils.Components;
+import com.senati.calculadora.utils.Helper;
+import com.senati.calculadora.R;
 
 public class Rombo extends AppCompatActivity {
 

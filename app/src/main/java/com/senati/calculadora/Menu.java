@@ -9,6 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.bumptech.glide.Glide;
+import com.senati.calculadora.modules.Circulo;
+import com.senati.calculadora.modules.Rectangulo;
+import com.senati.calculadora.modules.Rombo;
+import com.senati.calculadora.modules.Trapecio;
+import com.senati.calculadora.modules.Triangulo;
+import com.senati.calculadora.utils.Components;
 
 public class Menu extends AppCompatActivity {
 

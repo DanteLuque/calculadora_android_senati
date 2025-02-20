@@ -13,19 +13,19 @@
         android:theme="@style/Theme.Calculadora"
         tools:targetApi="31">
         <activity
-            android:name=".Rombo"
+            android:name=".modules.Rombo"
             android:exported="false" />
         <activity
-            android:name=".Circulo"
+            android:name=".modules.Circulo"
             android:exported="false" />
         <activity
-            android:name=".Rectangulo"
+            android:name=".modules.Rectangulo"
             android:exported="false" />
         <activity
-            android:name=".Trapecio"
+            android:name=".modules.Trapecio"
             android:exported="false" />
         <activity
-            android:name=".Triangulo"
+            android:name=".modules.Triangulo"
             android:exported="false" />
         <activity
             android:name=".Menu"
