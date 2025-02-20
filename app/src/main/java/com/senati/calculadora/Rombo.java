@@ -27,19 +27,36 @@ public class Rombo extends AppCompatActivity {
         cargarGIF();
     }
 
-
     // eventos
     public void hallarAreaRombo(View view){
-        float diagonalMayor = Float.parseFloat(et_diagonal_mayor.getText().toString());
-        float diagonalMenor = Float.parseFloat(et_diagonal_menor.getText().toString());
+        String diagonalMayorText = et_diagonal_mayor.getText().toString();
+        String diagonalMenorText = et_diagonal_menor.getText().toString();
 
-        float area = (diagonalMayor*diagonalMenor)/2;
+        if (diagonalMayorText.isEmpty()) {
+            et_diagonal_mayor.setError("Ingrese un valor");
+            return;
+        }
 
-        tv_resultado.setText(Helper.decimalFormateo(area));
+        if(diagonalMenorText.isEmpty()){
+            et_diagonal_menor.setError("Ingrese un valor");
+            return;
+        }
+
+        try{
+            float area = calcular(diagonalMayorText, diagonalMenorText);
+            tv_resultado.setText(Helper.decimalFormateo(area));
+        }catch (Error e){
+            System.out.println("Error: "+e);
+        }
     }
 
-
     // metodos
+    public float calcular(String diagonalMayorText, String diagonalMenorText){
+        float diagonalMayor = Float.parseFloat(diagonalMayorText);
+        float diagonalMenor = Float.parseFloat(diagonalMenorText);
+
+        return (diagonalMayor * diagonalMenor) / 2;
+    }
     public void loadUI(){
         et_diagonal_mayor = (EditText) findViewById(R.id.et_diagonal_mayor);
         et_diagonal_menor = (EditText) findViewById(R.id.et_diagonal_menor);
