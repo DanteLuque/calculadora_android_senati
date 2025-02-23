@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.senati.calculadora.utils.Helper;
+import com.senati.calculadora.utils.Components;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +31,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Helper.cargarGIF(this, R.drawable.calculadora, img_main);
+        Components.buildGIF(this, R.drawable.calculadora, img_main);
     }
 }

@@ -59,6 +59,6 @@ public class Circulo extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Helper.cargarGIF(this, R.drawable.circulo, img_circulo);
+        Components.buildGIF(this, R.drawable.circulo, img_circulo);
     }
 }

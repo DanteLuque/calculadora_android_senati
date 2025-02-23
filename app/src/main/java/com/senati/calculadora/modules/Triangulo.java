@@ -68,6 +68,6 @@ public class Triangulo extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Helper.cargarGIF(this, R.drawable.triangulo, img_triangulo);
+        Components.buildGIF(this, R.drawable.triangulo, img_triangulo);
     }
 }

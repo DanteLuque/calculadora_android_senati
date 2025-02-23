@@ -73,6 +73,6 @@ public class Trapecio extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Helper.cargarGIF(this, R.drawable.trapecio, img_trapecio);
+        Components.buildGIF(this, R.drawable.trapecio, img_trapecio);
     }
 }

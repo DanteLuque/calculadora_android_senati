@@ -12,10 +12,4 @@ public class Helper {
         DecimalFormat formateo = new DecimalFormat("#.##");
         return formateo.format(numero);
     }
-
-    public static void cargarGIF(Context context, int image, ImageView imageView) {
-        Glide.with(context)
-                .load(image)
-                .into(imageView);
-    }
 }

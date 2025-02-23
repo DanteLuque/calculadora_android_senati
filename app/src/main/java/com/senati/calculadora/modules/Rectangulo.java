@@ -67,6 +67,6 @@ public class Rectangulo extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Helper.cargarGIF(this, R.drawable.rectangulo, img_rectangulo);
+        Components.buildGIF(this, R.drawable.rectangulo, img_rectangulo);
     }
 }

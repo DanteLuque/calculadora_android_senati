@@ -66,6 +66,6 @@ public class Rombo extends AppCompatActivity {
     }
 
     public void cargarGIF(){
-        Helper.cargarGIF(this, R.drawable.rombo, img_rombo);
+        Components.buildGIF(this, R.drawable.rombo, img_rombo);
     }
 }
